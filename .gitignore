@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+.venv/
+.venv_cls/
+venv/
+.env
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Node / Next.js
+node_modules/
+.next/
+out/
+dist/
+*.tsbuildinfo
+
+# IDE / OS
+.DS_Store
+.idea/
+.vscode/
+
+# Models / large artifacts (keep tracked weights out of git by default)
+models/*.pt
+models/*.onnx
+!models/.gitkeep
+
+# Datasets (keep raw data local)
+datasets/*
+!datasets/.gitkeep
+
+# Hugging Face snapshot downloads (see scripts/download_hf_rubik_retinanet.py)
+third_party/
+
+# Ultralytics training runs
+runs/
+datasets/rubik_obb/
