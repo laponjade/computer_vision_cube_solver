@@ -33,6 +33,9 @@ models/*.onnx
 datasets/*
 !datasets/.gitkeep
 
+# Cube face crops for training / eval (large; not stored on GitHub)
+images/
+
 # Hugging Face snapshot downloads (see scripts/download_hf_rubik_retinanet.py)
 third_party/
 
